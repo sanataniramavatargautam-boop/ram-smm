@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101827">
+<title>RAM SMM | Social Media Services</title>
+<style>
+:root{--bg:#0b1220;--panel:#121d30;--panel2:#18263d;--text:#eef4ff;--muted:#a8b7ce;--blue:#20a4f3;--line:#2b3b54;--green:#29c58a}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(145deg,#0b1220,#101b2e);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--text)}
+header{padding:18px 16px;border-bottom:1px solid var(--line);position:sticky;top:0;background:#0b1220ed;backdrop-filter:blur(10px);z-index:2}
+.wrap{max-width:1000px;margin:auto}.brand{display:flex;align-items:center;gap:11px}.logo{width:44px;height:44px;border-radius:13px;background:linear-gradient(135deg,#20a4f3,#6c5ce7);display:grid;place-items:center;font-weight:900;font-size:17px}.brand h1{font-size:19px;margin:0}.brand p{font-size:11px;color:var(--muted);margin:2px 0 0;letter-spacing:1px}
+nav{display:flex;gap:8px;overflow:auto;margin-top:16px}nav button{white-space:nowrap;background:transparent;border:1px solid var(--line);color:var(--muted);padding:10px 13px;border-radius:11px;font-size:13px}nav button.active{background:var(--blue);color:white;border-color:var(--blue)}
+main{max-width:1000px;margin:auto;padding:22px 16px 45px}.hero{padding:25px;border:1px solid #28415d;border-radius:22px;background:radial-gradient(circle at 90% 0%,#1b5b8d66,transparent 42%),linear-gradient(130deg,#14243a,#111b2c)}.eyebrow{color:#6dc8ff;font-size:12px;font-weight:800;letter-spacing:1.5px}.hero h2{font-size:clamp(27px,5vw,42px);line-height:1.12;margin:10px 0}.hero p{color:var(--muted);max-width:650px;line-height:1.6}.btn{border:0;border-radius:11px;background:var(--blue);color:white;padding:12px 16px;font-weight:750;font-size:14px;cursor:pointer}.btn.secondary{background:#263852;border:1px solid #3a4e6c}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:15px}.stat,.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px}.stat strong{display:block;font-size:20px}.stat span{font-size:12px;color:var(--muted)}.section-head{display:flex;justify-content:space-between;align-items:center;margin:26px 0 13px}.section-head h3{margin:0;font-size:19px}.hint{font-size:12px;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.service-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:13px;background:#203c5c;font-size:21px}.card h4{margin:12px 0 6px}.card p{font-size:13px;color:var(--muted);line-height:1.5}.tag{display:inline-block;border:1px solid #35506d;color:#b9dfff;border-radius:100px;padding:5px 9px;font-size:11px}.notice{background:#2a2414;border:1px solid #6b5627;color:#ffe3a2;border-radius:13px;padding:13px;font-size:12px;line-height:1.55;margin-top:16px}.panel{display:none}.panel.show{display:block}.formgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}.field label{display:block;font-size:13px;color:#c4d2e6;margin-bottom:7px}.field input,.field select,.field textarea{width:100%;background:#0c1524;border:1px solid #35465f;color:white;border-radius:10px;padding:12px;font:inherit}.field textarea{min-height:85px}.full{grid-column:1/-1}.rowbtn{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}.tablewrap{overflow:auto}.orders{width:100%;border-collapse:collapse;font-size:13px}.orders th,.orders td{text-align:left;padding:12px;border-bottom:1px solid var(--line);white-space:nowrap}.orders th{color:var(--muted)}.empty{padding:25px;text-align:center;color:var(--muted)}footer{text-align:center;color:var(--muted);font-size:12px;padding:20px;border-top:1px solid var(--line)}
+@media(max-width:650px){.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.formgrid{grid-template-columns:1fr}.full{grid-column:auto}.hero{padding:20px}.stat:last-child{grid-column:1/-1}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand"><div class="logo">R</div><div><h1>RAM SMM</h1><p>SOCIAL MEDIA SERVICES</p></div></div>
+  <nav aria-label="मुख्य मेन्यू">
+    <button class="active" data-tab="home">होम</button><button data-tab="services">सर्विसेज़</button><button data-tab="order">ऑर्डर दें</button><button data-tab="history">मेरे ऑर्डर</button><button data-tab="account">अकाउंट</button>
+  </nav>
+</div></header>
+<main>
+<section class="panel show" id="home">
+  <div class="hero"><div class="eyebrow">WELCOME TO RAM SMM</div><h2>Grow your social presence.<br>Build your brand.</h2><p>सोशल मीडिया प्रमोशन, कंटेंट सपोर्ट और प्रोफाइल ग्रोथ सेवाएँ — एक ही जगह। अपनी जरूरत चुनें और ऑर्डर की जानकारी भेजें।</p><button class="btn" data-goto="services">सर्विस देखें →</button> <button class="btn secondary" data-goto="order">ऑर्डर शुरू करें</button></div>
+  <div class="stats"><div class="stat"><strong id="orderCount">0</strong><span>इस डिवाइस पर ऑर्डर</span></div><div class="stat"><strong>24/7</strong><span>ऑर्डर रिक्वेस्ट फॉर्म</span></div><div class="stat"><strong>₹0</strong><span>स्टार्टर वेबसाइट टेम्पलेट</span></div></div>
+  <div class="notice"><b>डेमो नोट:</b> यह शुरुआती वेबसाइट टेम्पलेट है। लॉगिन, असली वॉलेट/Add Funds, पेमेंट, एडमिन कंट्रोल और ऑटोमैटिक डिलीवरी अभी कनेक्ट नहीं हैं। कोई भुगतान यहाँ न करें और Instagram पासवर्ड कभी न दें।</div>
+</section>
+<section class="panel" id="services">
+  <div class="section-head"><h3>हमारी सर्विसेज़</h3><span class="hint">स्टार्टर कैटलॉग</span></div>
+  <div class="grid">
+    <div class="card"><div class="service-icon">🎬</div><h4>Reel Promotion</h4><p>रील के लिए ऑडियंस, कंटेंट और प्रमोशन प्लान।</p><span class="tag">ऑर्डर रिक्वेस्ट</span><p><button class="btn" data-service="Reel Promotion" data-goto="order">चुनें</button></p></div>
+    <div class="card"><div class="service-icon">❤️</div><h4>Engagement Support</h4><p>कंटेंट सुधार और वास्तविक engagement बढ़ाने की सलाह।</p><span class="tag">ऑर्डर रिक्वेस्ट</span><p><button class="btn" data-service="Engagement Support" data-goto="order">चुनें</button></p></div>
+    <div class="card"><div class="service-icon">📈</div><h4>Profile Growth Plan</h4><p>प्रोफाइल ऑडिट, पोस्टिंग शेड्यूल और growth सुझाव।</p><span class="tag">ऑर्डर रिक्वेस्ट</span><p><button class="btn" data-service="Profile Growth Plan" data-goto="order">चुनें</button></p></div>
+  </div>
+  <div class="notice">नकली followers, bots या कृत्रिम likes/views की डिलीवरी इस टेम्पलेट में शामिल नहीं है। ऐसी सेवाएँ अकाउंट के लिए जोखिम पैदा कर सकती हैं।</div>
+</section>
+<section class="panel" id="order">
+  <div class="section-head"><h3>ऑर्डर रिक्वेस्ट</h3><span class="hint">अभी डेमो मोड</span></div>
+  <div class="card">
+    <form id="orderForm" class="formgrid">
+      <div class="field"><label for="customer">आपका नाम</label><input id="customer" required placeholder="नाम लिखें"></div>
+      <div class="field"><label for="contact">WhatsApp / संपर्क</label><input id="contact" required placeholder="संपर्क नंबर"></div>
+      <div class="field"><label for="service">सर्विस चुनें</label><select id="service"><option>Reel Promotion</option><option>Engagement Support</option><option>Profile Growth Plan</option><option>Content Planning</option></select></div>
+      <div class="field"><label for="platform">प्लेटफॉर्म</label><select id="platform"><option>Instagram</option><option>YouTube</option><option>Facebook</option></select></div>
+      <div class="field full"><label for="url">पब्लिक प्रोफाइल / पोस्ट लिंक (पासवर्ड नहीं)</label><input id="url" type="url" placeholder="https://instagram.com/yourprofile"></div>
+      <div class="field full"><label for="details">काम की जानकारी</label><textarea id="details" placeholder="आपको किस तरह की मदद चाहिए?"></textarea></div>
+      <div class="full"><button class="btn" type="submit">डेमो ऑर्डर सेव करें</button></div>
+    </form>
+    <div class="notice">अभी यह फॉर्म सिर्फ इसी ब्राउज़र/डिवाइस में ऑर्डर सेव करता है। यह RAM SMM एडमिन तक नहीं भेजता और भुगतान नहीं लेता। लाइव करने से पहले सुरक्षित बैकएंड जोड़ें।</div>
+  </div>
+</section>
+<section class="panel" id="history">
+  <div class="section-head"><h3>मेरे ऑर्डर</h3><button class="btn secondary" id="clearOrders">डेमो रिकॉर्ड हटाएँ</button></div>
+  <div class="card tablewrap" id="orderList"></div>
+</section>
+<section class="panel" id="account">
+  <div class="section-head"><h3>My Account</h3></div>
+  <div class="card"><h4>RAM SMM ग्राहक अकाउंट</h4><p>यह अभी फ्रंट-एंड डेमो है। असली ग्राहक लॉगिन के लिए सुरक्षित authentication और server/database सेटअप जरूरी है।</p><p><b>वॉलेट बैलेंस:</b> उपलब्ध नहीं (डेमो)</p><p><b>Add Funds:</b> पेमेंट गेटवे कनेक्ट होने तक बंद</p><button class="btn secondary" data-goto="order">ऑर्डर रिक्वेस्ट करें</button></div>
+</section>
+</main>
+<footer>© RAM SMM · Starter Website Template · सुरक्षित और वास्तविक प्रमोशन सेवाएँ</footer>
+<script>
+const panels=[...document.querySelectorAll('.panel')], nav=[...document.querySelectorAll('nav button')];
+function go(id){panels.forEach(p=>p.classList.toggle('show',p.id===id));nav.forEach(b=>b.classList.toggle('active',b.dataset.tab===id));if(id==='history')renderOrders();window.scrollTo({top:0,behavior:'smooth'});}
+nav.forEach(b=>b.addEventListener('click',()=>go(b.dataset.tab)));
+document.querySelectorAll('[data-goto]').forEach(b=>b.addEventListener('click',()=>{if(b.dataset.service)document.getElementById('service').value=b.dataset.service;go(b.dataset.goto)}));
+function getOrders(){try{return JSON.parse(localStorage.getItem('ramSmmDemoOrders')||'[]')}catch(e){return []}}
+function renderOrders(){const list=document.getElementById('orderList'),orders=getOrders();document.getElementById('orderCount').textContent=orders.length;if(!orders.length){list.innerHTML='<div class="empty">अभी कोई डेमो ऑर्डर नहीं है।</div>';return;}list.innerHTML='<table class="orders"><thead><tr><th>ID</th><th>सर्विस</th><th>प्लेटफॉर्म</th><th>स्थिति</th><th>तारीख</th></tr></thead><tbody>'+orders.map(o=>`<tr><td>${o.id}</td><td>${escapeHtml(o.service)}</td><td>${escapeHtml(o.platform)}</td><td>डेमो में सेव</td><td>${o.date}</td></tr>`).join('')+'</tbody></table>'}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+document.getElementById('orderForm').addEventListener('submit',e=>{e.preventDefault();const orders=getOrders();orders.unshift({id:'RAM'+Date.now().toString().slice(-6),name:document.getElementById('customer').value,contact:document.getElementById('contact').value,service:document.getElementById('service').value,platform:document.getElementById('platform').value,url:document.getElementById('url').value,details:document.getElementById('details').value,date:new Date().toLocaleDateString('hi-IN')});localStorage.setItem('ramSmmDemoOrders',JSON.stringify(orders));e.target.reset();renderOrders();alert('डेमो ऑर्डर इस डिवाइस पर सेव हुआ। यह अभी सर्वर पर नहीं भेजा गया है।');go('history')});
+document.getElementById('clearOrders').addEventListener('click',()=>{if(confirm('इस डिवाइस के डेमो ऑर्डर हटाएँ?')){localStorage.removeItem('ramSmmDemoOrders');renderOrders()}});
+renderOrders();
+</script>
+</body></html>
