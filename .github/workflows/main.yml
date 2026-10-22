@@ -1,6 +1,7 @@
 
 name: Deploy RAM SMM to Firebase
-
+  workflow_dispatch:
+  
 on:
   push:
     branches:
